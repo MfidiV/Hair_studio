@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glow Hair Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Glow Hair Studio</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="contact-section" id="contact">
+    <div class="contact-header">
+      <h2>Let's Get in Touch</h2>
+      <p>Have questions or want to book an appointment? We’re here for you.</p>
+    </div>
+  
+    <div class="contact-container">
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <input type="tel" placeholder="Phone Number">
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+  
+      <div class="contact-info">
+        <h3>Visit Us</h3>
+        <p>123 Beauty Avenue, Cape Town, WC</p>
+        <h3>Call</h3>
+        <p>+27 78 606 0529</p>
+        <h3>Email</h3>
+        <p>hello@salonbeauty.co.za</p>
+        <h3>Hours</h3>
+        <p>Mon–Sat: 9am – 6pm<br>Sun: Closed</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h3>Glow Hair Salon</h3>
+        <p>Crafting confidence, one strand at a time.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-phone"></i> 021 545 8787</p>
+        <p><i class="fas fa-envelope"></i> info@glowhairsalon.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Beauty Avenue, Cape Town</p>
+      </div>
+  
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/27786060529" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Glow Hair Salon. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- ✅ Then your script -->
+    <script src="script.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper(".gallerySwiper", {
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    });
+  </script>
+  
+  
+    
+
+</body>
+</html>
